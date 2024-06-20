@@ -166,7 +166,7 @@ nav {
 }
 
 .basicSliding {
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
 
     h2 {
         font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.5rem);

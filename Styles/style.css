@@ -107,7 +107,7 @@ nav {
             input {
                 width: 100%;
                 padding: .75rem 1rem;
-                border: 1px solid var(--lightGray-color) ;
+                border: 1px solid var(--lightGray-color);
                 font-size: .8rem;
                 border-radius: .5rem;
                 margin-top: .3rem;
@@ -127,7 +127,7 @@ nav {
             input {
                 width: 100%;
                 padding: .75rem 1rem;
-                border: 1px solid var(--lightGray-color) ;
+                border: 1px solid var(--lightGray-color);
 
 
 
@@ -160,6 +160,44 @@ nav {
             &:nth-child(2) {
                 color: var(--red-color);
                 font-weight: 500;
+            }
+        }
+    }
+}
+
+.basicSliding {
+    padding-top: 3rem;
+
+    h2 {
+        font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.5rem);
+        padding-bottom: .6rem;
+    }
+
+    label {
+        padding-bottom: .3rem;
+    }
+
+    .materialSub {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        width: 100%;
+        gap: 2rem;
+
+        .first,
+        .second {
+            width: 100%;
+
+            .tetxArea {
+                textarea {
+                    width: 100%;
+                    border: 1px solid var(--lightGray-color);
+                    resize: none;
+                    padding: 1rem;
+                    &::placeholder{
+                        font-size: .8rem;
+                    }
+                }
             }
         }
     }
@@ -232,7 +270,7 @@ nav {
             input {
                 width: 100%;
                 padding: .75rem 1rem;
-                border: 1px solid var(--lightGray-color) ;
+                border: 1px solid var(--lightGray-color);
 
 
 
@@ -327,22 +365,16 @@ nav {
         font-size: clamp(1.1rem, -0.875rem + 8.333vw, 1.5rem);
     }
 
-    .radio {
+    .materialSub {
         display: flex;
+        justify-content: center;
         align-items: center;
+        width: 100%;
         gap: 2rem;
-        padding-bottom: 0rem;
 
         .first,
         .second {
-            display: flex;
-            align-items: center;
-            gap: .7rem;
-
-            h3 {
-                font-size: 1rem;
-                padding-top: .5rem;
-            }
+            width: 100%;
         }
     }
 }
@@ -394,7 +426,7 @@ nav {
                 input {
                     width: 100%;
                     padding: 1rem 1rem;
-                    border: 1px solid var(--lightGray-color) ;
+                    border: 1px solid var(--lightGray-color);
 
                     font-size: .8rem;
 
@@ -418,7 +450,7 @@ nav {
                 width: 100%;
                 margin-top: 1rem;
                 padding: 1rem 1rem;
-                border: 1px solid var(--lightGray-color) ;
+                border: 1px solid var(--lightGray-color);
 
 
                 font-size: .8rem;
@@ -434,7 +466,7 @@ nav {
             input {
                 width: 100%;
                 padding: 1rem 1rem;
-                border: 1px solid var(--lightGray-color) ;
+                border: 1px solid var(--lightGray-color);
 
 
                 font-size: .8rem;
@@ -473,7 +505,7 @@ nav {
                 input {
                     width: 100%;
                     padding: 1rem 1rem;
-                    border: 1px solid var(--lightGray-color) ;
+                    border: 1px solid var(--lightGray-color);
 
 
                     font-size: .8rem;

@@ -17,7 +17,7 @@
     --red-color: #d41616;
 }
 
-body{
+body {
     overflow-x: hidden;
     height: 100%;
 }
@@ -39,7 +39,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: .5rem;
+    padding-top: 2rem;
 
     h1 {
         font-size: clamp(1.3rem, -0.875rem + 8.333vw, 2rem);
@@ -59,9 +59,9 @@ nav {
         }
 
         @media screen and (max-width:600px) {
-         p{
-            display: none;
-         }
+            p {
+                display: none;
+            }
         }
 
         button {
@@ -153,6 +153,12 @@ nav {
             }
         }
     }
+
+    @media screen and (max-width:768px) {
+        .main {
+            flex-direction: column;
+        }
+    }
 }
 
 .pleaseNote {
@@ -197,7 +203,7 @@ nav {
         gap: 2rem;
 
         @media screen and (max-width:769px) {
-         flex-wrap: wrap;
+            flex-wrap: wrap;
         }
 
         .first,
@@ -210,7 +216,8 @@ nav {
                     border: 1px solid var(--lightGray-color);
                     resize: none;
                     padding: 1rem;
-                    &::placeholder{
+
+                    &::placeholder {
                         font-size: .8rem;
                     }
                 }
@@ -243,6 +250,12 @@ nav {
                 padding-bottom: .4rem;
                 color: var(--gray-color);
             }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .maininputs {
+            flex-direction: column;
         }
     }
 
@@ -280,6 +293,19 @@ nav {
                         font-size: 1rem;
                         padding-top: .8rem;
                     }
+                }
+            }
+
+            @media screen and (max-width:970px) {
+                .radio {
+                    flex-wrap: wrap;
+
+                }
+            }
+
+            @media screen and (max-width:970px) {
+                #mobileRadio {
+                    padding-bottom: 0;
                 }
             }
 
@@ -321,6 +347,13 @@ nav {
                 }
             }
         } */
+
+    }
+
+    @media screen and (max-width:768px) {
+        .radiosRoof {
+            flex-direction: column;
+        }
     }
 
     label {
@@ -422,6 +455,12 @@ nav {
         }
     }
 
+    @media screen and (max-width:768px) {
+        .typeGutter {
+            flex-direction: column;
+        }
+    }
+
     .downspouts {
         display: flex;
         justify-content: center;
@@ -449,6 +488,18 @@ nav {
                     border-radius: .3rem;
                 }
             }
+
+            @media screen and (max-width:768px) {
+                .l {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .downspouts {
+            flex-direction: column;
         }
     }
 
@@ -491,6 +542,13 @@ nav {
             }
         }
     }
+
+    @media screen and (max-width:768px) {
+        .splashGuards {
+            flex-direction: column;
+        }
+
+    }
 }
 
 .solar {
@@ -532,6 +590,13 @@ nav {
         }
     }
 
+    @media screen and (max-width:769px) {
+        .solarPanels {
+            flex-direction: column;
+        }
+
+    }
+
     .slope {
         padding-top: 3rem;
 
@@ -571,6 +636,13 @@ nav {
             width: 100%;
         }
     }
+
+    @media screen and (max-width:768px) {
+        .typeMental {
+            flex-direction: column;
+        }
+
+    }
 }
 
 .bottomFooter {
@@ -585,7 +657,7 @@ nav {
         align-items: center;
 
         @media screen and (max-width:769px) {
-         flex-wrap: wrap;
+            flex-wrap: wrap;
         }
 
         div {
@@ -613,7 +685,7 @@ nav {
                 background-color: transparent;
                 border-radius: 25rem;
                 margin-bottom: .5rem;
-                
+
                 &:nth-child(2) {
                     background-color: var(--red-color);
                     color: var(--white-color);
@@ -621,8 +693,9 @@ nav {
                 }
             }
         }
-        #footerBtn{
-        text-align: center;
+
+        #footerBtn {
+            text-align: center;
         }
     }
 }
